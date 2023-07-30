@@ -10,12 +10,12 @@ export function Leftside() {
     <div className="logo-1">
         <Link to="/"><img src={logo} title="" alt="" /></Link>
     </div>
-    <div className="left-2"><img src={kvicha1} title="" alt="" /></div>
+    <div className="main_kvara_pic"><img src={kvicha1} title="" alt="" /></div>
    
-    <div className="left-3">
-        <div className="left-4"><img src={icon_08} title="" alt="" /></div>
-        <div className="left-5">
-            <div className="left-6"><Link to="#/">FOLLOW US</Link></div>
+    <div className="leftbar_container">
+        <div className="leftbar_kvara_pic"><img src={icon_08} title="" alt="" /></div>
+        <div className="leftbar_contact_items">
+            <div className="leftbar_follow_us"><Link to="#/">FOLLOW US</Link></div>
             <Link to="#/">
                 <div className="left-soc-1"><i className="instagram"></i></div>
             </Link>
@@ -24,8 +24,8 @@ export function Leftside() {
             </Link>
         </div>
     </div>
-    <div className="left-7">
-        <div className="left-8"></div>
+    <div className="leftside_bg_cover">
+        
     </div>
 </div>
     )

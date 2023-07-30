@@ -8,10 +8,10 @@ export function Video() {
   return (
     <div className="container">
       <Leftside />
-      <div className="right-1">
-        <div className="right-001"></div>
+      <div className="rightside">
+        <div className="blue_lines"></div>
         <Header />
-        <div className="right-2">
+        <div className="content_container">
           <div className="video_cont">
             <div className="video_inner_cont">
               <VideoSearch />

@@ -6,38 +6,38 @@ export function Home() {
         <div className="container">
             <Leftside />
 
-            <div className="right-1">
-                <div className="right-001"></div>
+            <div className="rightside">
+                <div className="blue_lines"></div>
                 <Header />
 
-                <div className="right-2">
-                    <div className="right-3">
-                        <div className="right-4">
-                            <div className="right-5">ხვიჩა</div>
-                            <div className="right-6">კვარაცხელია</div>
+                <div className="content_container">
+                    <div className="content_inner">
+                        <div className="kvara_title">
+                            <div className="kvara_title_name">ხვიჩა</div>
+                            <div className="kvara_title_lastname">კვარაცხელია</div>
                         </div>
 
-                        <div className="right-7">
-                            <span className="right-9">ასაკი: 22</span>
-                            <span className="right-8"></span>
+                        <div className="first_info_items">
+                            <span className="first_info_item_first_text">ასაკი: 22</span>
+                            <span className="age_icon"></span>
 
-                            <span className="right-9">კლუბი: ნაპოლი</span>
-                            <span className="right-08"></span>
+                            <span className="first_info_item_first_text">კლუბი: ნაპოლი</span>
+                            <span className="club_icon"></span>
 
-                            <span className="right-09 right-9">ქვეყანა: საქართველო</span>
-                            <span className="right-008"></span>
+                            <span className="first_info_item_first_text">ქვეყანა: საქართველო</span>
+                            <span className="country_icon"></span>
                         </div>
-                        <div className="right-0007">
-                            <span className="right-9">მატჩი: 27</span>
+                        <div className="second_info_items">
+                            <span className="first_info_item_first_text">მატჩი: 27</span>
                             <span className="match_icon"></span>
 
-                            <span className="right-9">გოლი: 13</span>
+                            <span className="first_info_item_first_text">გოლი: 13</span>
                             <span className="goal_icon"></span>
 
-                            <span className="right-09 right-9">ასისტი: 12</span>
+                            <span className="first_info_item_first_text">ასისტი: 12</span>
                             <span className="assist_icon"></span>
 
-                            <span className="right-09 right-9">ბარათები:  &nbsp; &nbsp; &nbsp;
+                            <span className="first_info_item_first_text">ბარათები:  &nbsp; &nbsp; &nbsp;
                             <span className="cards_icon"></span>  
                             0 <span className="yellow_Card"></span>
                             &nbsp; &nbsp;

@@ -10,7 +10,6 @@ export const SubscribeForm = () => {
 
   const handleSubscribe = (event) => {
     event.preventDefault();
-    // Save the email to local storage
     localStorage.setItem('subscribedEmail', email);
     setSubscribed(true);
   };

@@ -9,11 +9,11 @@ export function Contact(){
   return(
     <div className="container">
       <Leftside/>
-      <div className="right-1">
-        <div className="right-001"></div>
+      <div className="rightside">
+        <div className="blue_lines"></div>
         <Header/>
-        <div class="right-2">
-<div class="right-3">   
+        <div class="content_container">
+<div class="content_inner">   
 <div className="contact_title">შეტყობინების გაგზავნა</div>
 <div className="cont_info_cont">
     

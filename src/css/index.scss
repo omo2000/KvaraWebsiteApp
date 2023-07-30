@@ -1,13 +1,19 @@
 @import url('./reset.scss');
 @import url('./app.scss');
-@import url('/src/css/home.scss');
-@import url('./subscribe.scss');
-@import url('./header.scss');
-@import url('./biography.scss');
-@import url('./video.scss');
-@import url('./schedule.scss');
-@import url('./contact.scss');
-@import url('./footer.scss');
+
+@import url('./pages/home.scss');
+@import url('./pages/biography.scss');
+@import url('./pages/video.scss');
+@import url('./pages/contact.scss');
+
+@import url('./components/Navigation.scss');
+@import url('./components/leftside.scss');
+@import url('./components/subscribe.scss');
+@import url('./components/header.scss');
+
+
+
+@import url('./components/footer.scss');
 
 body {
   background-color: #ffffff;

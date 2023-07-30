@@ -1,0 +1,236 @@
+$color_1: #636E7B;
+$color_2: #1B1822;
+$font-family_1: firstfont;
+
+@font-face {
+	font-family: firstfont;
+	src: url(../../fonts/font-1.ttf);
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.rightside {
+	width: 70%;
+	height: 100%;
+	float: right;
+}
+
+.blue_lines{
+	background: url(../../images/icon_10.svg) ;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 125%;
+	height: 100%;
+	left: -435px;
+	overflow: hidden;
+	z-index: -1;
+}
+
+.content_container {
+	width: 100%;
+	height: 800px;
+	float: left;
+	position: relative;
+	z-index: 9999;
+}
+
+.content_inner {
+	margin: 0px 5% 0px 193px;
+}
+
+.kvara_title {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin-top: 100px;
+	font-size: 60px;
+}
+
+.kvara_title_name {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 0% 0% 0% 0%;
+	color: $color_2;
+	font-family: $font-family_1;
+}
+
+.kvara_title_lastname{
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 0% 0% 0% 0%;
+	background: var(--1, linear-gradient(180deg, #199FD6 0%, #003C82 100%));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 106.5%;
+	letter-spacing: 2.56px;
+	font-family: $font-family_1;
+}
+
+.first_info_items {
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 3% 0% 2% 0%;
+	font-size: 15px;
+	font-family: $font-family_1;
+	color: $color_1;
+	span {
+		font-family: $font-family_1;
+	}
+}
+
+.first_info_item_first_text {
+	float: left;
+	padding: 0px 20px 0px 15px;
+	margin: 5px 0px 0px 0px;
+	border-left: 1px #ddd solid;
+}
+
+.age_icon {
+	width: 36px;
+	height: 27px;
+	background: url(../../images/ic-1.svg) center no-repeat;
+	float: left;
+	margin: -2px 15px 0px -14px;
+}
+
+.club_icon {
+	width: 40px;
+	height: 27px;
+	background: url(../../images/napoli.svg) center no-repeat;
+	float: left;
+	margin: -2px 0px 0px -24px;
+}
+
+.country_icon {
+	width: 40px;
+	height: 27px;
+	background: url(../../images/georgia.svg  )center no-repeat;
+	float: left;
+	margin: -2px 0px 0px -15px;
+}
+
+.second_info_items{
+	width: 100%;
+	float: left;
+	position: relative;
+	margin: 0% 0% 2% 0%;
+	font-size: 15px;
+	font-family: $font-family_1;
+	color: $color_1;
+}
+
+.match_icon{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/match.svg) center no-repeat;
+	float: left;
+	margin: -2px 15px 0px -14px;
+}
+
+.goal_icon{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/goal.svg) center no-repeat;
+	float: left;
+	margin: -2px 15px 0px -14px;
+}
+
+.assist_icon{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/assist.svg) center no-repeat;
+	float: left;
+	margin: -2px 15px 0px -14px;
+}
+
+.cards_icon{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/cards.svg) center no-repeat;
+	float: left;
+	margin: 0;
+	position: absolute;
+	right: 175px;
+	top: 0;
+}
+
+.yellow_Card{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/yellow_card.svg) center no-repeat;
+	float: left;
+	margin: 0;
+	position: absolute;
+	right: 133px;
+	top:0;
+
+
+}
+
+.red_Card{
+	width: 36px;
+	height: 27px;
+	background: url(../../images/red_card.svg) center no-repeat;
+	float: left;
+	margin: 0;
+	position: absolute;
+	right: 97px;
+	top:0;
+}
+
+.video {
+	iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+	width: 732px;
+	height: 300px;
+	float: left;
+	position: relative;
+	left: 10px;
+	margin: 2% 0% 4% 0%;
+	box-shadow: 0px 0px 0px 10px #199FD6;
+}
+
+input {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

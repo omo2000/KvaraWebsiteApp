@@ -1,0 +1,132 @@
+@font-face {
+  font-family: firstfont;
+  src: url(../../fonts/font-1.ttf);
+
+  font-family: secondfont;
+  src: url(../../fonts/lvg-bebas-neue-regular.otf)
+
+    
+}
+
+.leftside_cont {
+  background: #fff url(../../images/bg_1.png) top no-repeat;
+  background-size: 100%;
+  width: 30%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+
+  .logo-1 {
+    position: relative;
+    z-index: 1;
+    width: 242px;
+    float: left;
+    margin-left: 120px;
+    margin-top: 24px;
+  }
+
+  .main_kvara_pic {
+    position: relative;
+    z-index: 9999999;
+    width: 90%;
+    height: 100%;
+    float: left;
+    margin-left: 195px;
+    margin-top: 55px;
+    margin-bottom: -10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.leftbar_container {
+  z-index: 1;
+  width: 90px;
+  height: 100%;
+  float: left;
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  border-right: 1px rgba(255, 255, 255, 0.20) solid;
+
+  .leftbar_kvara_pic {
+    img {
+      width: 51px;
+      top: 6px;
+      position: relative;
+    }
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    background: rgb(255 255 255 / 15%);
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 18px auto;
+  }
+
+  .leftbar_contact_items {
+    width: 90px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  .leftbar_follow_us a {
+    position: relative;
+    left: 35px;
+    color: #FFF;
+    font-size: 18px;
+    font-family: firstfont;
+    margin-bottom: 20px;
+    writing-mode: vertical-rl;
+  }
+
+  .left-soc-01.left-soc-1 {
+    margin-bottom: 30px;
+    &:hover {
+      background: #1d55f1;
+      border: 2px #1d55f1 solid;
+    }
+  }
+
+  .left-soc-1 {
+    margin: auto;
+    width: 45px;
+    height: 45px;
+    border: 2px rgb(255 255 255 / 30%) solid;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    &:hover {
+      background: #f11d62;
+      border: 2px #f11d62 solid;
+    }
+  }
+
+  .instagram {
+    width: 100%;
+    height: 100%;
+    background: url(../../images/icon_09.svg) center no-repeat;
+    float: left;
+  }
+
+  .facebook {
+    width: 100%;
+    height: 100%;
+    background: url(../../images/icon_04.svg) center no-repeat;
+    float: left;
+  }
+}
+
+.leftside_bg_cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(12, 13, 24, 0.81);
+}
