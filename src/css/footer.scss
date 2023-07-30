@@ -1,0 +1,47 @@
+@font-face {
+  font-family: firstfont;
+  src: url(../fonts/font-1.ttf);
+}
+
+.footer{
+  position: relative;
+  bottom: -155px;
+  left: 649px;
+  width: 752px;
+  margin-bottom: 165px;
+  z-index: 1;
+}
+
+.footer_cont{
+  position: relative;
+  display: flex;
+  padding: 6px 0;
+  width: 100%;
+
+}
+
+.footer_cont h3{
+  font-family: firstfont;
+  font-size: 14px;
+  color: #1B1822;
+}
+
+.footer_cont a{
+  color: #199FD6;
+  text-decoration: underline;
+}
+
+.createby{
+  position: absolute;
+  right: 0;
+}
+
+.border_line{
+  position: absolute;
+  width: 752px;
+  height: 1px;
+  left: 0;
+  bottom: 39px;
+  background-color: #E3E6ED;
+  z-index: 99999;
+}

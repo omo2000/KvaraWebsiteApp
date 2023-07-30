@@ -1,0 +1,207 @@
+@font-face {
+    font-family: firstfont;
+    src: url(../fonts/font-1.ttf);
+
+    font-family: secondfont;
+    src: url(../fonts/lvg-bebas-neue-regular.otf)
+
+      
+  }
+
+.video-new-0 {
+    width: 98%;
+    float: left;
+    position: relative;
+    margin: 2% 0% 2% -1%;
+}
+
+.video-new-1 {
+    width: 48%;
+    float: left;
+    position: relative;
+    margin: 0% 1% 2% 1%;
+}
+
+.video-new-1 iframe {
+    width: 100%;
+    height: 210px;
+    float: left;
+    position: relative;
+    margin: 0% 0% 0% 0%;
+}
+
+
+//api
+
+
+.video_cont{
+    margin: 0px 5% 0px 193px;
+    width: 752px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 0 0 0px 0;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.29);
+    -webkit-box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.29);
+    -moz-box-shadow: -1px -1px 15px -2px rgba(0,0,0,0.29);
+}
+
+.video_inner_cont{
+    width: 710px;
+    padding: 10px 0px 403px 0px;
+    position: relative;
+    margin: auto;
+}
+
+
+.vid_cont{
+    padding: 20px 0 150px 0;
+}
+
+
+//search input and button
+
+.video_form{
+    margin: 0 0px 30px 0px;
+}
+
+
+.search_input{
+    width: 88% !important;
+    border-radius: 5px 0px 0px 5px !important;
+}
+
+.search_button{
+    font-family: font-1;
+    font-feature-settings: "case" on;
+    border: 0 none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 46px;
+    font-size: 15px;
+    border-radius: 0px 5px 5px 0px;
+    line-height: 22px;
+    outline: none;
+    background-color: #199fd6;
+    color: #fff;
+    border: 0 none;
+    padding: 7px 22px;
+    text-decoration: none !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+
+.search_button:hover{
+    background-color: #1795c7;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+//search input and button
+
+
+//categories
+
+.cat_list{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cat_list button{
+    font-family: font-1;
+    font-feature-settings: "case" on;
+    border: 0 none;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 46px;
+    font-size: 15px;
+    border-radius: 5px;
+    line-height: 22px;
+    outline: none;
+    background-color: #199fd6;
+    color: #fff;
+    border: 0 none;
+    padding: 7px 14.5px;
+    text-decoration: none !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+.cat_list button:hover{
+    background-color: #1795c7;
+    -webkit-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+}
+
+//categories
+
+//videos
+.video_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 20px 0px;
+}
+
+.video_list_item{
+    width: 335px;
+    margin: 0 10px 20px 10px;
+}
+
+.video_list_item_title{
+    font-family: firstfont;
+    width: 319px;
+    height: 32px;
+    color: #1b1822;
+    font-size: 15px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.video_list_item iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Add this to your CSS file or style block in your React component */
+.see_more_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 55555;
+  }
+  
+  .see_more_button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .see_more_button button:hover {
+    background-color: #0056b3;
+  }
+  
