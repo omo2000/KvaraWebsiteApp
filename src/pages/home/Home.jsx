@@ -1,6 +1,8 @@
 import { Header } from "../header/Header";
 import { Footer, Leftside, SubscribeForm  } from "../../global";
 
+import home from '../../global/langs/home.json'
+
 export function Home() {
     return (
         <div className="container">
@@ -13,35 +15,35 @@ export function Home() {
                 <div className="content_container">
                     <div className="content_inner">
                         <div className="kvara_title">
-                            <div className="kvara_title_name">ხვიჩა</div>
-                            <div className="kvara_title_lastname">კვარაცხელია</div>
+                            <div className="kvara_title_name">{home.kvicha_firstname}</div>
+                            <div className="kvara_title_lastname">{home.kvicha_lastname}</div>
                         </div>
 
                         <div className="first_info_items">
-                            <span className="first_info_item_first_text">ასაკი: 22</span>
+                            <span className="first_info_item_first_text">{home.age_title}: {home.age}</span>
                             <span className="age_icon"></span>
 
-                            <span className="first_info_item_first_text">კლუბი: ნაპოლი</span>
+                            <span className="first_info_item_first_text">{home.club_title}: {home.club}</span>
                             <span className="club_icon"></span>
 
-                            <span className="first_info_item_first_text">ქვეყანა: საქართველო</span>
+                            <span className="first_info_item_first_text">{home.country_title}: {home.country}</span>
                             <span className="country_icon"></span>
                         </div>
                         <div className="second_info_items">
-                            <span className="first_info_item_first_text">მატჩი: 27</span>
+                            <span className="first_info_item_first_text">{home.match_title}: {home.match}</span>
                             <span className="match_icon"></span>
 
-                            <span className="first_info_item_first_text">გოლი: 13</span>
+                            <span className="first_info_item_first_text">{home.goal_title}: {home.goal}</span>
                             <span className="goal_icon"></span>
 
-                            <span className="first_info_item_first_text">ასისტი: 12</span>
+                            <span className="first_info_item_first_text">{home.assist_title}: {home.assist}</span>
                             <span className="assist_icon"></span>
 
-                            <span className="first_info_item_first_text">ბარათები:  &nbsp; &nbsp; &nbsp;
+                            <span className="first_info_item_first_text">{home.cards_title}:  &nbsp; &nbsp; &nbsp;
                             <span className="cards_icon"></span>  
-                            0 <span className="yellow_Card"></span>
+                            {home.yellow_card} <span className="yellow_Card"></span>
                             &nbsp; &nbsp;
-                            0 <span className="red_Card"></span>
+                            {home.red_card} <span className="red_Card"></span>
                             </span>
                             
                         </div>

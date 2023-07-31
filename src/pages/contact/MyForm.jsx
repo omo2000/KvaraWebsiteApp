@@ -1,4 +1,3 @@
-// MyForm.js
 import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -19,9 +18,7 @@ const MyForm = () => {
   });
 
   const onSubmit = (values) => {
-    // Handle form submission here
     console.log(values);
-    // Save the data to local storage
     localStorage.setItem('formData', JSON.stringify(values));
     alert('შეტყობინება წარმატებით გაიგზავნა');
   };

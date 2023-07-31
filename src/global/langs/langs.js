@@ -14,6 +14,7 @@ export const langs = {
         title: "კონტაქტი"
       }
     }
+    
   },
   en: {
     pages: {

@@ -4,14 +4,14 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import CategoryButton from './CategoryButton';
 
-const apiKey = 'AIzaSyDLff6jEnlP7hiogclVK94I0GKDZ8Okido'; // Replace with your API key
+const apiKey = 'AIzaSyDLff6jEnlP7hiogclVK94I0GKDZ8Okido'; 
 const baseUrl = 'https://www.googleapis.com/youtube/v3';
 
 const VideoSearch = () => {
   const [query, setQuery] = useState('');
-  const [searchedQuery, setSearchedQuery] = useState('kvicha kvaratskhelia'); // Store the searched query separately
+  const [searchedQuery, setSearchedQuery] = useState('kvicha kvaratskhelia'); 
   const [videos, setVideos] = useState([]);
-  const [visibleVideos, setVisibleVideos] = useState(6); // Number of videos to display
+  const [visibleVideos, setVisibleVideos] = useState(6); 
 
   const getVideos = useCallback(async (searchQuery) => {
     try {
@@ -37,20 +37,20 @@ const VideoSearch = () => {
   }, [visibleVideos]);
 
   useEffect(() => {
-    getVideos(searchedQuery); // Fetch videos based on the initial default search query
+    getVideos(searchedQuery); 
   }, [searchedQuery, getVideos]);
 
   const handleCategoryClick = (searchQuery) => {
     setQuery('');
-    setSearchedQuery(searchQuery); // Update the searched query when a category is clicked
-    setVisibleVideos(6); // Reset to display 6 videos when switching categories
+    setSearchedQuery(searchQuery); 
+    setVisibleVideos(6); 
     getVideos(searchQuery);
   };
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    setSearchedQuery(query); // Update the searched query when a manual search is performed
-    setVisibleVideos(6); // Reset to display 6 videos when searching
+    setSearchedQuery(query); 
+    setVisibleVideos(6); 
     getVideos(query);
   };
 
@@ -101,7 +101,6 @@ const VideoSearch = () => {
                 height="315"
                 src={`https://www.youtube.com/embed/${video.videoId}`}
                 title={video.title}
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>

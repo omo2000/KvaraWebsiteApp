@@ -1,63 +1,55 @@
 
-
-
-import React, { useState } from 'react';
 import { Header } from "../header";
 import { Leftside } from "../../global";
 import { Footer } from "../../global";
-import biokvaraphoto from '../../images/bio_kvara_photo.png'
+import biokvaraphoto from '../../images/bio_kvara_photo.png';
+import { useState } from 'react';
 
+import biography from '../../global/langs/biography.json'
 
+export const Biography = () => {
+  const [showFullText, setShowFullText] = useState(false);
 
-const ReadMore = ({ children }) => {
-  const text = children;
-  const [isReadMore, setIsReadMore] = useState(true);
-  const toggleReadMore = () => {
-    setIsReadMore(!isReadMore);
+  
+  const bioText = biography.biography_text; 
+
+              
+
+  const handleReadMoreClick = () => {
+    setShowFullText(!showFullText);
   };
+
   return (
-    <p className="bioText">
-    {isReadMore ? text.slice(0, 150) : text}
-    <span onClick={toggleReadMore} className="read-or-hide">
-      {isReadMore ? "...read more" : " show less"}
-    </span>
-    </p>
-  );
-  };
-  export const Biography = () => {
-    return (
- 
     <div className="container">
-      <Leftside/>
+      <Leftside />
       <div className="rightside">
-      <div className="blue_lines"></div>
-        <Header/>
+        <div className="blue_lines"></div>
+        <Header />
         <div className="content_container">
-          <div className="content_inner">   
+          <div className="content_inner">
             <div className="bio_info_cont">
-
               <div className="bio_in">
                 <div className="bio_left">
-                  <ul className="bio_list">
+                <ul className="bio_list">
                     <li className="bio_list_item">
-                      დაბადების თარიღი
-                      <span className="bio_item_span">12 თებერვალი, 2001</span>
+                      {biography.borndate_title}
+                      <span className="bio_item_span">{biography.born_date}</span>
                     </li>
                     <li className="bio_list_item">
-                      დაბადების ადგილი
-                      <span className="bio_item_span">საქართველო, თბილისი</span>
+                      {biography.bornplace_title}
+                      <span className="bio_item_span">{biography.born_place}</span>
                     </li>
                     <li className="bio_list_item">
-                      სიმაღლე
-                      <span className="bio_item_span">181სმ</span>
+                      {biography.height_title}
+                      <span className="bio_item_span">{biography.height}</span>
                     </li>
                     <li className="bio_list_item">
-                      წონა
-                      <span className="bio_item_span">70 კგ</span>
+                      {biography.weight_title}
+                      <span className="bio_item_span">{biography.weight}</span>
                     </li>
                     <li className="bio_list_item">
-                      პოზიცია
-                      <span className="bio_item_span">შემტევი ნახევარმცველი</span>
+                      {biography.position_title}
+                      <span className="bio_item_span">{biography.position}</span>
                     </li>
                   </ul>
                 </div>
@@ -67,81 +59,25 @@ const ReadMore = ({ children }) => {
                   </div>
                 </div>
               </div>
-                <div  className="break_line"></div>
+              <div className="break_line"></div>
               <div className="info-1">
-              <div className="info-2">ბიოგრაფია</div> 
-              <ReadMore>
-              ხვიჩა კვარაცხელია (დ. 12 თებერვალი, 2001, თბილისი, საქართველო) 
-               ქართველი ფეხბურთელი. საქართველოს ეროვნული ნაკრებისა და საფეხბურთო კლუბ „ნაპოლის“ შემტევი ნახევარმცველი.
-                <br />
-                <br />
-               <b>ადრეული კარიერა</b> 2012 წლიდან თამაშობდა თბილისის „დინამოს“ აკადემიასა და ახალგაზრდულ გუნდებში. 
-               კვარაცხელიამ საკლუბო კარიერა 2017 წელს, თბილისის „დინამოში“ დაიწყო. 
-               კლუბის ძირითად შემადგენლობაში მისი დებიუტი იმავე წლის 29 სექტემბერს კოლხეთი-1913-ის წინააღმდეგ გამართულ 
-               საქართველოს ჩემპიონატის შეხვედრაში შედგა. დინამოელთა მაისურით მან მხოლოდ ოთხი მატჩი ითამაშა და ერთი გოლი შეაგდო. 
-               მომდევნო წელს „რუსთავში“ გადავიდა, რომლის მაისურითაც 18 შეხვედრა ჩაატარა და სამი ბურთი გაიტანა.
-               <br />
-                <br />
-               <b>მოსკოვის ლოკომოტივი</b> 2019 წლის 15 თებერვალს, კვარაცხელია იჯარით მოსკოვის „ლოკომოტივში“ გადავიდა. 
-               მისი დებიუტი რუსეთის პრემიერ ლიგაში 2019 წლის 10 მარტს, მაჰაჩყალის „ანჟის“ წინააღმდეგ შედგა, 
-               როდესაც შეხვედრის 86-ე წუთზე ჯეფერსონ ფარფანი შეცვალა.2019 წლის 1 ივლისს, იჯარის ვადის გასვლის 
-               შემდეგ კვარაცხელიას „ლოკომოტივის“ დატოვება მოუწია. კლუბის მთავარმა მწვრთნელმა იური სიომინმა ამასთან დაკავშირებით განაცხადა, 
-               რომ იმედგაცრუებული იყო ხვიჩას გუნდიდან წასვლის და „რუსთავისგან“ არგამოსყიდვის გამო.
-               <br />
-                <br />
-               <b>ყაზანის რუბინი</b> 2019 წლის 6 ივლისს, კვარაცხელიამ ყაზანის „რუბინთან“ ხუთწლიან კონტრაქტს მოაწერა ხელი.
-               2019 წლის 15 ივლისს, მან ყოფილ კლუბს, მოსკოვის „ლოკომოტივს“ გაუტანა, ხოლო მომდევნო გოლი „რუბინის“ მაისურით, 
-               2019 წლის 30 ნოემბერს, გროზნოს „ახმატის“ კარში შეაგდო. 2020 წლის ზაფხულში გავრცელდა ინფორმაცია, 
-               რომ თურქული „გალათასარაი“ მზად იყო მის სანაცვლოდ 15 მილიონი ევრო გადაეხადა, მაგრამ ტრანსფერი არ შედგა.
-               კვარაცხელია 2020 წლის აგვისტო-სექტემბერ-ოქტომბერში გულშემატკივრებმა ზედიზედ სამჯერ დაასახელეს გუნდის საუკეთესო ფეხბურთელად.
-               2020 წელს საქართველოს წლის საუკეთესო ფეხბურთელად დასახელდა. 
-               2021 წლის აპრილში კვლავ დაასახელეს გუნდის თვის საუკეთესო ფეხბურთელად.
-              2021 წლის დასაწყისში L'Equipe-მა გამოაქვეყნა XXI საუკუნეში დაბადებული 50 საუკეთესო ფეხბურთელის სია, 
-              რომელშიც ხვიჩა რუსეთის პრემიერ ლიგის ერთადერთი წარმომადგენელი იყო.
-              <br />
-                <br />
-              <b>ბათუმის დინამო</b> 2022 წლის 7 მარტს ფიფამ ოფიციალურად განაცხადა, რომ უკრაინაში რუსეთის შეჭრის გამო, 
-              რუსეთში მყოფ ლეგიონერებს შეეძლოთ ცალმხრივად გაეწყვიტათ კონტრაქტები და 
-              უფლება ეძლეოდათ რუსეთის ფარგლებს გარეთ არსებულ კლუბებს 2022 წლის 30 ივნისამდე შეერთებოდნენ.
-              2022 წლის 24 მარტს ყაზანის „რუბინის“ პრეს-სამსახურმა დაადასტურა ინფორმაცია იმის შესახებ, 
-              რომ კვარაცხელიამ და კლუბმა ერთობლივი შეთანხმების საფუძველზე გადაწყვეტილება მიიღეს მათ შორის არსებული კონტრაქტის შეჩერების შესახებ.
-              ამავე დღეს ის ბათუმის „დინამოს“ შეუერთდა. კვარაცხელიამ ბათუმის „დინამოს“ მაისურით 11 მატჩი ჩაატარა, 
-              სადაც 8 გოლის გატანა და 2 საგოლე გადაცემის გაკეთება მოახერხა. ამასთან ერთად, 
-              ივნისის ბოლოს ეროვნული ლიგის მეორე წრის საუკეთესო მოთამაშედ დასახელდა.
-              <br />
-                <br />
-              <b>ნაპოლი</b> 2022 წლის 1 ივლისს ხვიჩა კვარაცხელია ოფიციალურად „ნაპოლის“ ფეხბურთელი გახდა, 
-              მისმა სატრანსფერო ღირებულებამ კი 10–12 მილიონი ევრო შეადგინა.
-              მისი დებიუტი სერია A-ში 15 აგვისტოს, პირველივე ტურის გასვლით შეხვედრაში, 
-              ვერონას „სტადიო მარკანტონიო ბენტეგოდიზე“ „ელას ვერონას“ წინააღმდეგ გამართულ მატჩში შედგა, 
-              სადაც ერთი გოლი გაიტანა და ერთი საგოლე გადაცემა გააკეთა. მიუხედავად იმისა, რომ ნეაპოლელებმა პირველი ბურთი საკუთარ კარში მიიღეს, 
-              შეხვედრის დარჩენილი პერიოდი აღმავლობით ჩაატარეს და მასპინძლებს დიდი ანგარიშით 5–2 მოუგეს.
-              21 აგვისტოს „მონცასთან“ მატჩში კვარაცხელიამ დუბლი შეასრულა, ხოლო ნაპოლიმ „მონცა“ ანგარიშით 4–0 დაამარცხა.
-
-
-
-
-
-		          </ReadMore>
-             
+                <div className="info-2">{biography.biography_title}</div>
+                {showFullText ? (
+                  <div>{bioText}</div>
+                ) : (
+                  <div>{bioText.slice(0, 150)}{bioText.length > 150 ? '...' : ''}</div>
+                )}
+                {bioText.length > 150 && (
+                  <button className="readmore"onClick={handleReadMoreClick}>
+                    {showFullText ? 'ნაკლების ნახვა' : 'მეტის ნახვა'}
+                  </button>
+                )}
+              </div>
             </div>
-
-            </div>
-
-            
           </div>
         </div>
-        
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
-
-
-
-
-
-
-
-

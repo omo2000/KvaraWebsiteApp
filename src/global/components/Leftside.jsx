@@ -3,6 +3,10 @@ import { Link } from "react-router-dom"
 import logo from '../../images/logo.svg'
 import kvicha1 from '../../images/khvicha-1.png'
 import icon_08 from '../../images/icon_08.png'
+import home from '../../global/langs/home.json'
+
+
+
 
 export function Leftside() {
     return(
@@ -15,7 +19,7 @@ export function Leftside() {
     <div className="leftbar_container">
         <div className="leftbar_kvara_pic"><img src={icon_08} title="" alt="" /></div>
         <div className="leftbar_contact_items">
-            <div className="leftbar_follow_us"><Link to="#/">FOLLOW US</Link></div>
+            <div className="leftbar_follow_us"><Link to="#/">{home.follow_us}</Link></div>
             <Link to="#/">
                 <div className="left-soc-1"><i className="instagram"></i></div>
             </Link>

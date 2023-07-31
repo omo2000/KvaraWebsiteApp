@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import home from '../../global/langs/home.json'
+
 export const SubscribeForm = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -16,10 +18,10 @@ export const SubscribeForm = () => {
 
   return (
     <div className="subscribe-form">
-      <h2>ადევნეთ თვალყური</h2>
+      <h2>{home.subscribe_form_title}</h2>
       {!subscribed ? (
         <p>
-          გამომიწერეთ რათა და არ გამოტოვოთ რაიმე სიახლე ახალი პროდუქტების, აქციების ან თუნდაც კარიერული ღონისძიებების შესახებ.
+          {home.subscribe_form_text}
         </p>
       ) : (
         <p className="thanks">მადლობა გამოწერისთვის</p>
